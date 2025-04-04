@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "fovtoggle",
+	"version": "${version}",
+	"name": "FOVToggle",
+	"description": "Switch the FOV quickly with a keybind",
+	"authors": [
+		"A5ho9999"
+	],
+	"contact": {
+		"homepage": "https://www.patreon.com/NekoChanBot",
+		"issues": "https://github.com/A5ho9999/MinecraftMods/issues"
+	},
+	"license": "MIT",
+	"icon": "assets/fovtoggle/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.a5ho9999.fovtoggle.FOVToggleMod"
+		]
+	},
+	"mixins": [],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": ">=1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	},
+	"custom": {
+		"modmenu": {
+			"links": {
+				"modmenu.discord": "https://discord.gg/GPSbAUb"
+			},
+			"update_checker": false
+		}
+	}
+}
