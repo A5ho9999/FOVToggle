@@ -16,6 +16,9 @@ public class ModConfig {
     private static final Path CONFIG_PATH = Paths.get("config", FOVToggleMod.MOD_ID + ".json");
 
     private int fovValue = 50;
+    private boolean noBonk = false;
+    private int noteBlockDelay = 4;
+    private int concurrentTuning = 3;
 
     public int getFovValue() {
         return fovValue;
@@ -23,6 +26,38 @@ public class ModConfig {
 
     public void setFovValue(int fovValue) {
         this.fovValue = fovValue;
+    }
+
+    public boolean getNoBonk() {
+        return noBonk;
+    }
+
+    public void setNoBonk(boolean bonkValue) {
+        this.noBonk = bonkValue;
+    }
+
+    public int getNoteBlockDelay() {
+        return noteBlockDelay;
+    }
+
+    public void setNoteBlockDelay(int delayValue) {
+        if (delayValue <= 0 ) {
+            delayValue = 1;
+        }
+
+        this.noteBlockDelay = delayValue;
+    }
+
+    public int getConcurrentTuning() {
+        return concurrentTuning;
+    }
+
+    public void setConcurrentTuning(int value) {
+        if (value <= 0 ) {
+            value = 1;
+        }
+
+        this.concurrentTuning = value;
     }
 
     public static ModConfig load() {

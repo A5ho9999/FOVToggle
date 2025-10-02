@@ -1,4 +1,16 @@
 {
   "key.fovtoggle": "Toggle FOV",
-  "category.fovtoggle": "FOV Toggle"
+  "key.sneaktoggle": "Toggle Sneak Mode",
+  "key.zoomiestoggle": "Toggle Nroom Mode",
+  "key.resetspeed": "Reset Max Boat Speed",
+  "category.fovtoggle": "FOV Toggle",
+  "noteblock.tuner.title": "NoteBlock Tuner",
+  "noteblock.tuner.current": "Current Note",
+  "noteblock.tuner.target": "Target Note",
+  "noteblock.tuner.tune": "Tune",
+  "noteblock.tuner.cancel": "Cancel",
+  "noteblock.tuner.instructions": "Use < > buttons or arrow keys to select target note",
+  "noteblock.tuner.auto_tuning": "Auto-tuning noteblock to note %d...",
+  "noteblock.tuner.completed": "Noteblock tuned to note %d!",
+  "noteblock.tuner.sneak_right_click": "Sneak + Right-click a noteblock to open tuner"
 }

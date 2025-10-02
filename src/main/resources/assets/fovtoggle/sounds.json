@@ -1,0 +1,15 @@
+{
+  "boat_landing": {
+    "sounds": [
+      "fovtoggle:boat_landing"
+    ],
+    "subtitle": "subtitles.fovtoggle.boat_landing"
+  },
+  "boat_collision": {
+    "sounds": [
+      "fovtoggle:boat_collision1",
+      "fovtoggle:boat_collision2"
+    ],
+    "subtitle": "subtitles.fovtoggle.boat_collision"
+  }
+}

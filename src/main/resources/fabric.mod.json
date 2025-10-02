@@ -19,7 +19,9 @@
 			"net.a5ho9999.fovtoggle.FOVToggleMod"
 		]
 	},
-	"mixins": [],
+	"mixins": [
+		"fov.mixins.json"
+	],
 	"depends": {
 		"fabricloader": ">=0.16.0",
 		"minecraft": ">=1.21",
