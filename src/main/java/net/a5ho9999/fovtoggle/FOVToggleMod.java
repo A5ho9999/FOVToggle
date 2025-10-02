@@ -10,6 +10,7 @@ import net.minecraft.client.option.GameOptions;
 import net.minecraft.client.option.KeyBinding;
 import net.minecraft.client.util.InputUtil;
 import net.minecraft.text.Text;
+import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -28,7 +29,7 @@ public class FOVToggleMod implements ModInitializer {
 
 		config = ModConfig.load();
 
-		keyBinding = KeyBindingHelper.registerKeyBinding(new KeyBinding("key.fovtoggle", InputUtil.Type.KEYSYM, InputUtil.GLFW_KEY_V, "category.fovtoggle"));
+		keyBinding = KeyBindingHelper.registerKeyBinding(new KeyBinding("key.fovtoggle", InputUtil.Type.KEYSYM, InputUtil.GLFW_KEY_V, KeyBinding.Category.create(Identifier.of(MOD_ID,"fovtoggle"))));
 
 		ClientTickEvents.END_CLIENT_TICK.register(client -> {
 			if (keyBinding.wasPressed()) {
